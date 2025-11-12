@@ -108,3 +108,16 @@ html, body{
     cursor: pointer;
     box-shadow: 5px 10px 5px rgba(0,0,0,0.3);
 }
+
+.winning-color{
+    background-color: rgb(27, 128, 27);
+}
+.winning-color:hover{
+    background-color: rgb(27, 128, 27)
+}
+.Lossing-color{
+    background-color: red;
+}
+.Lossing-color:hover{
+    background-color: red;
+}

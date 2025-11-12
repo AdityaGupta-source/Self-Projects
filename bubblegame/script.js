@@ -73,13 +73,40 @@ function playAgain(){
     document.querySelector(".js-score").textContent = score;
 }
 document.querySelector("#panelbottom").addEventListener("click",function(dets){
-    let clickedNumber = Number(dets.target.textContent);
-    if(clickedNumber == target){
-        increaseScore();
-        makebubble();
-        newHit();
+    let clickedNumber = Number(dets.target.textContent);   
+    let element = dets.target;
+    if(element.classList.contains("bubble")){
+        if(clickedNumber === target){
+            element.classList.add('winning-color');
+            console.log(element);
+            increaseScore();
+            winAudio.currentTime = 0;
+            winAudio.play();
+            setTimeout(function(){
+                makebubble();
+                newHit();
+            },300);
+        }
+        else{
+            lossAudio.currentTime  = 0;
+            lossAudio.play();
+            element.classList.add('Lossing-color');
+            gsap.to(element,{
+                x: -10,
+                duration: 0.1,
+                repeat: 3,
+                yoyo: true,
+                ease: "sine.out"
+            });
+            setTimeout(function(){
+                element.classList.remove('Lossing-color');
+            },400)
     }
+}
 })
+var winAudio = new Audio("Audio/wining-audio.mp3");
+var lossAudio = new Audio("Audio/error-cutted.mp3");
+
 makebubble();
 runTimer();
 newHit();
