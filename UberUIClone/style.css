@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main,body{
+    height: 100%;
+    width: 100%;
+    font-family: uber-Move-Text;
+}
+@font-face{
+    font-family: Uber-Move;
+    src: url(Fonts/UberMoveMedium.otf);
+}
+@font-face{
+    font-family: Uber-Move-Text;
+    src: url(Fonts/UberMoveTextRegular.otf);
+}
+
+.first{
+    margin-top: 126px;
+}
+.text,.first-image{
+    display: inline-block;
+}
+
+.main-image{
+    height: 400px;
+    margin-left: -25%;
+}
+
+.text{
+    width: 58%;
+    padding: 0px 12%;
+}
+.city-main{
+    margin-left: -8px;
+}
+.cityChoice{
+    margin: 8px;
+    font-weight: 500;
+}
+.location-image{
+    height: 20px;
+    margin-right: -5px;
+}
+.change-city{
+    text-decoration: underline;
+}
+.heading{
+    font-weight: 600;
+    font-size: 52px;
+    font-family: Uber-Move;
+    margin-bottom: 17px;
+}
+.container{
+    width: 74%;
+}
+.input-location{
+    width: 100%;
+    padding: 12px 15px;
+    padding-left: 40px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.07);
+    border: none;
+    margin-left: -1px;
+    font-family: Uber-Move-Text;
+}
+.input-location::placeholder{
+    color: rgba(0,0,0,0.6);
+}
+.input-date-time-flex{
+    display:flex;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 17px;
+}
+.flex-1{
+    flex: 1;
+}
+.input-date-box{
+    width: 100%;
+    padding-right: 50px;
+    background-color: rgba(0,0,0,0.07);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.input-date{
+    color: rgba(0,0,0,0.6);
+}
+.btn-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer
+}
+.btn-prices > button{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+.login{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: rgba(0,0,0,0.14);
+    transition: text-decoration-color 1s;
+}
+.login:hover{
+    text-decoration-color: rgba(0,0,0,1);
+}
+.suggestion-box{
+    margin-bottom: 90px;
+}
+.suggestion{
+    margin-top: 52px;
+    padding-left: 12%;
+    font-family: Uber-Move;
+    font-size: 36px;
+    font-weight: 700;
+}
+.flex-suggestion{
+    display: flex;
+    gap: 20px;
+    height: 150px;
+    padding-left: 12%;
+}
+.element-suggestion{
+    background-color: rgba(0,0,0,0.07);
+    width: 370px;
+    border-radius: 12px;
+    padding: 12px;
+    padding-left: 18px;
+}
+.flex-img-text{
+    display: flex;
+}
+.img-suggestion{
+    height: 140px;
+}
+.text-suggestion > :nth-child(1){
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.text-suggestion > :nth-child(2){
+    font-size: 12px;
+    color: rgba(0,0,0,0.6);
+    padding-bottom: 22px;
+}
+.button-suggestion{
+    background-color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: bacground-color 0.15s;
+}
+.button-suggestion:hover{
+    background-color: rgba(0,0,0,0.012);
+}
+.panel{
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.panel-text{
+    margin-left: 12%;
+    width: 440px;
+    margin-right: 72px;
+}
+.panel-text-1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Uber-Move;
+    margin-bottom: 20px;
+}
+.panel-text-2{
+    font-size: 16;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgba(0,0,0,0.8);
+}
+.login-create-button{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+.login-button{
+    background-color: rgb(26,26,26);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 7px;
+    border: none;
+}
+
+.create-button{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: rgba(0,0,0,0.14);
+    transition: text-decoration-color 1s;
+}
+.create-button:hover{
+    text-decoration-color: rgba(0,0,0,1);
+}
+.panel-image{
+    margin-right: 160px;
+    padding-left: 70px;
+
+}
+.panel-image-left{
+    width: 570px;
+    margin-left: 18%;
+}
+.panel-text-left{
+    margin-left: 80px;
+    width: 427px;
+}
+
