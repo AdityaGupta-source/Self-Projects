@@ -1,0 +1,55 @@
+.header{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    color: white;
+    width: 100%;
+    height: 9%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.right-section-header{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.right-section-header :nth-child(1){
+    font-size: 25px;
+}
+.left-section-header{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    cursor: pointer;
+}
+.left-section-header-Login :nth-child(1){
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer
+}
+.left-section-header-signup :nth-child(1){
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 17px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.login-signup{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

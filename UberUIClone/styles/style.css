@@ -10,11 +10,11 @@ main,body{
 }
 @font-face{
     font-family: Uber-Move;
-    src: url(Fonts/UberMoveMedium.otf);
+    src: url(../Fonts/UberMoveMedium.otf);
 }
 @font-face{
     font-family: Uber-Move-Text;
-    src: url(Fonts/UberMoveTextRegular.otf);
+    src: url(../Fonts/UberMoveTextRegular.otf);
 }
 
 .first{
@@ -43,6 +43,7 @@ main,body{
 .location-image{
     height: 20px;
     margin-right: -5px;
+    margin-left: -4px;
 }
 .change-city{
     text-decoration: underline;
